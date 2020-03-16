@@ -5,7 +5,12 @@
 //npm install multer
 var express = require('express');
 var app = express();
+//用于处理 JSON, Raw, Text 和 URL 编码的数据
 var bodyParser = require('body-parser');
+//用于处理 enctype="multipart/form-data"（设置表单的MIME编码）的表单数据来上传文件
+var multer  = require('multer');
+//用来操作文件
+var fs = require("fs");
 
 //使用npm安装mysql模块
 //npm install mysql
